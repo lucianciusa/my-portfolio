@@ -18,22 +18,18 @@ const content = {
     aboutTitle: "About Me",
     aboutBody:
       "I am currently studying an AI & Big Data specialization master's degree at Tajamar Tech in Madrid, Spain. I enjoy combining machine learning, analytics, and clean product thinking to solve real-world problems.",
-    educationTitle: "Education",
-    educationKicker: "Current",
-    educationDegree: "Master's in AI & Big Data Specialization",
-    educationSchool: "Tajamar Tech, Madrid, Spain",
     projectsTitle: "Projects",
-    projectsIntro: "Real project spotlight plus upcoming case studies.",
+    projectsIntro: "Real project spotlight plus upcoming ones.",
     projectCards: [
       {
-        tag: "Current",
+        tag: "",
         title: "La Cuchara",
         body: "My current project. Full case study and technical breakdown will be added soon."
       },
       {
-        tag: "Next",
-        title: "Upcoming Project",
-        body: "Reserved for your next AI or data case study."
+        tag: "Soon",
+        title: "In Progress",
+        body: "Space ready for future portfolio work and measurable outcomes."
       },
       {
         tag: "Soon",
@@ -43,7 +39,7 @@ const content = {
     ],
     skillsTitle: "Skills & Tech Stack",
     certTitle: "Certifications",
-    certIntro: "Microsoft certifications completed and in progress.",
+    certIntro: "Microsoft certifications certified and in progress.",
     contactTitle: "Contact",
     contactBody: "Use this form to quickly draft an email.",
     formName: "Name",
@@ -53,37 +49,33 @@ const content = {
   },
   es: {
     nav: [
-      { id: "about", label: "Sobre mi" },
+      { id: "about", label: "Sobre mí" },
       { id: "projects", label: "Proyectos" },
       { id: "skills", label: "Habilidades" },
       { id: "certifications", label: "Certificaciones" },
       { id: "contact", label: "Contacto" }
     ],
-    heroEyebrow: "Estudiante de Master en IA y Big Data",
+    heroEyebrow: "Estudiante de Máster en IA y Big Data",
     heroTitle: "Lucian Ciusa",
-    heroSubtitle: "Construyendo productos de IA y soluciones basadas en datos en Madrid.",
+    heroSubtitle: "Construyendo productos de IA y soluciones basadas en datos.",
     heroPrimary: "Ver proyectos",
     linkedinLabel: "LinkedIn",
     githubLabel: "GitHub",
-    aboutTitle: "Sobre Mi",
+    aboutTitle: "Sobre Mí",
     aboutBody:
-      "Actualmente estudio un master de especializacion en IA y Big Data en Tajamar Tech, Madrid. Me gusta combinar machine learning, analitica y mentalidad de producto para resolver problemas reales.",
-    educationTitle: "Educacion",
-    educationKicker: "Actual",
-    educationDegree: "Master en Especializacion de IA y Big Data",
-    educationSchool: "Tajamar Tech, Madrid",
+      "Actualmente estudio un máster de especialización en IA y Big Data en Tajamar Tech, Madrid. Me gusta combinar machine learning, analítica y mentalidad de producto para resolver problemas reales.",
     projectsTitle: "Proyectos",
-    projectsIntro: "Proyecto real destacado y proximos casos de estudio.",
+    projectsIntro: "Proyecto real destacado y próximos casos de estudio.",
     projectCards: [
       {
-        tag: "Actual",
+        tag: "",
         title: "La Cuchara",
-        body: "Mi proyecto actual. El caso de estudio completo y el detalle tecnico se anadiran pronto."
+        body: "Mi proyecto actual. El caso de estudio completo y el detalle técnico se añadirá pronto."
       },
       {
-        tag: "Siguiente",
-        title: "Proximo Proyecto",
-        body: "Espacio reservado para tu siguiente caso de IA o datos."
+        tag: "Pronto",
+        title: "En Progreso",
+        body: "Espacio preparado para futuros proyectos con resultados medibles."
       },
       {
         tag: "Pronto",
@@ -91,11 +83,11 @@ const content = {
         body: "Espacio preparado para futuros proyectos con resultados medibles."
       }
     ],
-    skillsTitle: "Habilidades y Stack Tecnologico",
+    skillsTitle: "Habilidades y Stack Tecnológico",
     certTitle: "Certificaciones",
-    certIntro: "Certificaciones de Microsoft completadas y en progreso.",
+    certIntro: "Certificaciones de Microsoft obtenidas y en progreso.",
     contactTitle: "Contacto",
-    contactBody: "Usa este formulario para redactar un email rapidamente.",
+    contactBody: "Usa este formulario para redactar un email rápidamente.",
     formName: "Nombre",
     formEmail: "Email",
     formMessage: "Mensaje",
@@ -107,45 +99,81 @@ const certifications = [
   {
     code: "DP-900",
     title: "Microsoft Azure Data Fundamentals",
-    status: "Completed",
+    status: "Certified",
     badgeUrl:
       "https://images.credly.com/size/680x680/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png",
     certUrl: "https://www.credly.com/badges/a84d21b9-d493-4e6c-a2cb-5a283c960b49/public_url",
     credentialId: "a84d21b9-d493-4e6c-a2cb-5a283c960b49",
-    tags: ["Fundamentals", "Data", "Azure"]
+    tags: [
+      "Core Data Concepts",
+      "Relational Data",
+      "Non-relational Data",
+      "Analytics Workloads",
+      "Azure Data Services",
+      "Power BI Basics"
+    ]
   },
   {
     code: "DP-300",
     title: "Administering Microsoft Azure SQL Solutions",
-    status: "Completed",
+    status: "Certified",
     badgeUrl:
       "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg",
     certUrl:
       "https://learn.microsoft.com/api/credentials/share/en-us/LucianCiusa-9334/DF7B34C0159A3BB5?sharingId=2F892BDD94DC2A42",
     credentialId: "DF7B34C0159A3BB5",
-    tags: ["Associate", "Azure SQL", "Administration"]
+    tags: [
+      "Azure SQL Database",
+      "Azure SQL Managed Instance",
+      "SQL Server on Azure VM",
+      "T-SQL Administration",
+      "Performance Optimization",
+      "Security Hardening",
+      "Task Automation",
+      "HA/DR"
+    ]
   },
   {
     code: "DP-700",
     title: "Implementing Data Engineering Solutions Using Microsoft Fabric",
-    status: "Completed",
+    status: "Certified",
     badgeUrl:
       "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg",
     certUrl:
       "https://learn.microsoft.com/api/credentials/share/en-us/LucianCiusa-9334/45553FD331F65910?sharingId=2F892BDD94DC2A42",
     credentialId: "45553FD331F65910",
-    tags: ["Associate", "Fabric", "Data Engineering"]
+    tags: [
+      "Microsoft Fabric",
+      "Data Ingestion",
+      "Data Transformation",
+      "Lakehouse",
+      "Data Warehouse",
+      "Real-Time Intelligence",
+      "Analytics Optimization",
+      "PySpark",
+      "KQL"
+    ]
   },
   {
     code: "AI-102",
     title: "Designing and Implementing a Microsoft Azure AI Solution",
-    status: "Completed",
+    status: "Certified",
     badgeUrl:
       "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg",
     certUrl:
       "https://learn.microsoft.com/api/credentials/share/en-us/LucianCiusa-9334/77150C69888DB3F4?sharingId=2F892BDD94DC2A42",
     credentialId: "77150C69888DB3F4",
-    tags: ["Associate", "AI", "Solutions"]
+    tags: [
+      "Azure AI Services",
+      "Azure AI Search",
+      "Azure OpenAI",
+      "Generative AI",
+      "Agentic Solutions",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Knowledge Mining",
+      "Responsible AI"
+    ]
   },
   {
     code: "DP-100",
@@ -155,17 +183,40 @@ const certifications = [
       "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-associate-badge.svg",
     certUrl: "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/",
     credentialId: "Pending",
-    tags: ["Associate", "Data Science", "In Progress"]
+    tags: [
+      "Azure Machine Learning",
+      "MLflow",
+      "Model Training",
+      "Experimentation",
+      "Model Deployment",
+      "MLOps",
+      "Prompt Optimization",
+      "Language Models"
+    ]
   }
 ];
 
 const skills = [
   "Python",
   "SQL",
+  "Azure",
+  "Azure Machine Learning",
+  "Azure AI Services",
+  "Azure OpenAI",
+  "Microsoft Fabric",
+  "Azure SQL",
+  "Databricks",
+  "PySpark",
   "Machine Learning",
+  "MLOps",
   "Data Analysis",
   "Power BI",
   "Deep Learning",
+  "NLP",
+  "Computer Vision",
+  "Prompt Engineering",
+  "Data Pipelines",
+  "ETL",
   "Git",
   "APIs"
 ];
@@ -197,12 +248,22 @@ function App() {
     const revealObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          entry.target.classList.toggle("visible", entry.isIntersecting);
+          const isVisible = entry.target.classList.contains("visible");
+          const ratio = entry.intersectionRatio;
+
+          if (!isVisible && ratio >= 0.24) {
+            entry.target.classList.add("visible");
+            return;
+          }
+
+          if (isVisible && ratio <= 0.08) {
+            entry.target.classList.remove("visible");
+          }
         });
       },
       {
-        rootMargin: "0px 0px -10% 0px",
-        threshold: 0.18
+        rootMargin: "0px 0px -8% 0px",
+        threshold: [0, 0.08, 0.16, 0.24, 0.32]
       }
     );
 
@@ -308,9 +369,9 @@ function App() {
           <p className="section-intro">{t.projectsIntro}</p>
 
           <div className="cards">
-            {t.projectCards.map((card) => (
-              <article className="card" key={card.title}>
-                <p className="tag">{card.tag}</p>
+            {t.projectCards.map((card, index) => (
+              <article className="card" key={`${card.title}-${index}`}>
+                {card.tag ? <p className="tag">{card.tag}</p> : null}
                 <h3>{card.title}</h3>
                 <p>{card.body}</p>
               </article>

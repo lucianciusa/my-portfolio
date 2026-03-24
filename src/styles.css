@@ -104,6 +104,7 @@ p {
   border-bottom: 1px solid rgba(113, 175, 255, 0.23);
   background: rgba(6, 13, 26, 0.7);
   backdrop-filter: blur(14px);
+  box-shadow: 0 8px 26px rgba(4, 10, 22, 0.35);
 }
 
 .logo {
@@ -127,7 +128,7 @@ p {
   text-decoration: none;
   font-size: 0.93rem;
   position: relative;
-  transition: color 0.25s ease;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .main-nav a::after {
@@ -147,6 +148,7 @@ p {
 .main-nav a:hover,
 .main-nav a.active {
   color: var(--text);
+  transform: translateY(-1px);
 }
 
 .main-nav a:hover::after,
@@ -162,6 +164,13 @@ p {
   font-family: "Space Mono", monospace;
   padding: 8px 14px;
   cursor: pointer;
+  transition: border-color 0.25s ease, background-color 0.25s ease, transform 0.2s ease;
+}
+
+.lang-toggle:hover {
+  border-color: var(--line-strong);
+  background: rgba(18, 35, 67, 0.9);
+  transform: translateY(-1px);
 }
 
 .container {
@@ -176,6 +185,7 @@ section[id] {
 }
 
 .panel {
+  position: relative;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: linear-gradient(165deg, rgba(13, 28, 54, 0.66), rgba(8, 17, 34, 0.64));
@@ -247,12 +257,13 @@ h1 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
 }
 
 .btn:hover {
   transform: translateY(-2px);
   filter: brightness(1.06);
+  box-shadow: 0 10px 24px rgba(8, 19, 40, 0.35);
 }
 
 .btn.primary {
@@ -274,6 +285,11 @@ h1 {
   width: 16px;
   height: 16px;
   fill: currentColor;
+  transition: transform 0.25s ease;
+}
+
+.social-btn:hover svg {
+  transform: scale(1.1);
 }
 
 h2 {
@@ -284,18 +300,6 @@ h3 {
   margin-top: 8px;
   color: var(--text);
   font-size: 1.05rem;
-}
-
-.timeline-item {
-  border-left: 3px solid var(--primary);
-  padding-left: 16px;
-  margin-top: 4px;
-}
-
-.kicker {
-  color: var(--accent);
-  font-family: "Space Mono", monospace;
-  margin-bottom: 6px;
 }
 
 .section-intro {
@@ -310,6 +314,8 @@ h3 {
 }
 
 .card {
+  position: relative;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: linear-gradient(165deg, rgba(10, 20, 40, 0.9), rgba(8, 15, 31, 0.9));
@@ -317,9 +323,24 @@ h3 {
   transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -140%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0));
+  transition: left 0.6s ease;
+}
+
 .card:hover {
   transform: translateY(-5px);
   border-color: var(--line-strong);
+}
+
+.card:hover::before {
+  left: 180%;
 }
 
 .tag {
@@ -342,6 +363,13 @@ h3 {
   color: #e4eeff;
   padding: 7px 12px;
   font-size: 0.9rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+.chips span:hover {
+  border-color: rgba(116, 186, 255, 0.54);
+  background: rgba(14, 29, 58, 0.88);
+  transform: translateY(-2px);
 }
 
 .cert-grid {
@@ -352,6 +380,8 @@ h3 {
 }
 
 .cert-card {
+  position: relative;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 18px;
@@ -363,9 +393,24 @@ h3 {
   transition: transform 0.22s ease, border-color 0.22s ease;
 }
 
+.cert-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -140%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(110deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0));
+  transition: left 0.6s ease;
+}
+
 .cert-card:hover {
   transform: translateY(-5px);
   border-color: var(--line-strong);
+}
+
+.cert-card:hover::before {
+  left: 180%;
 }
 
 .cert-badge-link {
@@ -440,6 +485,12 @@ h3 {
   font-size: 0.78rem;
   color: #d8e9ff;
   background: rgba(12, 28, 55, 0.72);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cert-tags span:hover {
+  transform: translateY(-1px);
+  border-color: rgba(144, 206, 255, 0.62);
 }
 
 .contact-form {
@@ -464,12 +515,23 @@ h3 {
   color: var(--text);
   font: inherit;
   padding: 10px 12px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: rgba(132, 192, 255, 0.46);
+  background: rgba(12, 22, 43, 0.95);
 }
 
 .contact-form textarea {
   resize: vertical;
   min-height: 110px;
-  max-height: 180px;
+  max-height: 240px;
+}
+
+.contact-form button {
+  margin-top: 4px;
 }
 
 .contact-form input:focus,
