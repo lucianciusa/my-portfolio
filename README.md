@@ -1,65 +1,63 @@
 # Lucian Ciusa Portfolio
 
-React + Vite portfolio website ready to deploy on Vercel.
+Personal portfolio built with React and Vite to showcase projects, certifications, education, and technical skills in AI, cloud, and software engineering.
 
-## Live site
+## Live Website
 
-- Production URL: https://lucianciusa-portfolio.vercel.app
+Visit: https://lucianciusa-portfolio.vercel.app
 
-## Local development
+## What You Will Find
+
+- Clean, responsive one-page experience
+- Bilingual content support (English and Spanish)
+- Featured project section with live demo links
+- Certifications and education timeline
+- Grouped technical skills by domain
+- Contact section with direct email access
+
+## Tech Stack
+
+- React
+- Vite
+- CSS (custom design system with variables and responsive layouts)
+- Vercel (hosting and automatic deployments)
+
+## Main Sections
+
+- Hero / Intro
+- About
+- Featured Project
+- Certifications
+- Education
+- Skills
+- Contact
+
+## For Developers
+
+### Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the URL shown in terminal (usually `http://localhost:5173`).
-
-## Production build
+### Build for production
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## Deploy to Vercel
+### Deployment
 
-1. Push this folder to GitHub.
-2. Import the repository in Vercel.
-3. Framework preset: `Vite` (auto-detected).
-4. Build command: `npm run build`.
-5. Output directory: `dist`.
-6. Deploy.
+This repository is connected to Vercel.
 
-### Auto redeploy on commit
+- Production URL: https://lucianciusa-portfolio.vercel.app
+- Every push to `main` triggers an automatic production redeploy
+- Pull requests get preview deployments
 
-After the repository is connected to Vercel, each push to `main` triggers a new production deployment automatically.
-
-```bash
-git add .
-git commit -m "your message"
-git push origin main
-```
-
-Vercel also creates preview deployments for pull requests.
-
-### Current Vercel project details
-
-- Project: `portfolio`
-- Framework: `Vite`
-- Node.js: `24.x`
-- Production alias: `lucianciusa-portfolio.vercel.app`
-
-## Customization points
+## Content and Styling Updates
 
 - Main content and translations: `src/App.jsx`
 - Visual design and layout: `src/styles.css`
-- Contact email destination: `src/App.jsx` (`mailto:lucianciusa1@gmail.com`)
-
-## Project structure
-
-- `index.html`: Vite entry HTML
-- `src/main.jsx`: React bootstrap
-- `src/App.jsx`: Portfolio UI and content
-- `src/styles.css`: Futuristic theme and responsive styles
-- `vite.config.js`: Vite configuration
+- App bootstrap: `src/main.jsx`
