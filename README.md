@@ -2,6 +2,19 @@
 
 Personal portfolio built with React and Vite to showcase projects, certifications, education, and technical skills in AI, cloud, and software engineering.
 
+## About Me
+
+I am Lucian Ciusa, an AI and data-focused engineer building practical solutions across machine learning, cloud platforms, and software systems.
+
+I enjoy turning complex business or technical problems into clear, usable products with measurable impact.
+
+## Value Proposition
+
+- Product-minded AI and data implementation, not only experimentation
+- Strong Microsoft ecosystem foundation (Azure, Fabric, Power Platform)
+- End-to-end delivery from concept and prototyping to deployment
+- Communication-first approach with clear documentation and stakeholder alignment
+
 ## Live Website
 
 Visit: https://lucianciusa-portfolio.vercel.app
