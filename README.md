@@ -11,7 +11,7 @@ I enjoy turning complex business or technical problems into clear, usable produc
 ## Value Proposition
 
 - Product-minded AI and data implementation, not only experimentation
-- Strong Microsoft ecosystem foundation (Azure, Fabric, Power Platform)
+- Strong Microsoft ecosystem foundation (Azure, Fabric)
 - End-to-end delivery from concept and prototyping to deployment
 - Communication-first approach with clear documentation and stakeholder alignment
 
