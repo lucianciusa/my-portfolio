@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
+import laCucharaPhoto from "../assets/la-cuchara-project.png";
+import lucianProfilePhoto from "../assets/lucian-profile.jpg";
 
 const content = {
   en: {
@@ -12,6 +14,7 @@ const content = {
     heroEyebrow: "AI & Big Data Master's Student",
     heroTitle: "Lucian Ciusa",
     heroSubtitle: "Building practical AI products and data-driven solutions.",
+    heroImageAlt: "Portrait of Lucian Ciusa",
     heroPrimary: "See my work",
     linkedinLabel: "LinkedIn",
     githubLabel: "GitHub",
@@ -20,11 +23,21 @@ const content = {
       "I am currently studying an AI & Big Data specialization master's degree at Tajamar Tech in Madrid, Spain. I enjoy combining machine learning, analytics, and clean product thinking to solve real-world problems.",
     projectsTitle: "Projects",
     projectsIntro: "Real project spotlight plus upcoming ones.",
+    projectRepo: "Repository",
+    projectDetails: "Details Page",
+    projectSolution: "Solution Deployment",
+    projectDemoUnavailable: "Demo not available",
     projectCards: [
       {
-        tag: "",
+        tag: "Featured",
         title: "La Cuchara",
-        body: "My current project. Full case study and technical breakdown will be added soon."
+        body:
+          "An AI platform for intelligent restaurant discovery and demand forecasting. Uses semantic embeddings for personalized venue recommendations and XGBoost models trained on 30+ features to predict daily service demand. Built with Python, Azure ML Studio, and cloud infrastructure.",
+        imageUrl: laCucharaPhoto,
+        imageAlt: "La Cuchara project photo",
+        repoUrl: "https://github.com/adnanhamidoun/lacuchara",
+        detailsUrl: "https://la-cuchara.vercel.app/",
+        solutionUrl: ""
       },
       {
         tag: "Soon",
@@ -58,6 +71,7 @@ const content = {
     heroEyebrow: "Estudiante de Máster en IA y Big Data",
     heroTitle: "Lucian Ciusa",
     heroSubtitle: "Construyendo productos de IA y soluciones basadas en datos.",
+    heroImageAlt: "Retrato de Lucian Ciusa",
     heroPrimary: "Ver proyectos",
     linkedinLabel: "LinkedIn",
     githubLabel: "GitHub",
@@ -66,11 +80,21 @@ const content = {
       "Actualmente estudio un máster de especialización en IA y Big Data en Tajamar Tech, Madrid. Me gusta combinar machine learning, analítica y mentalidad de producto para resolver problemas reales.",
     projectsTitle: "Proyectos",
     projectsIntro: "Proyecto real destacado y próximos casos de estudio.",
+    projectRepo: "Repositorio",
+    projectDetails: "Página de Detalles",
+    projectSolution: "Despliegue de la Solución",
+    projectDemoUnavailable: "Demo no disponible",
     projectCards: [
       {
-        tag: "",
+        tag: "Destacado",
         title: "La Cuchara",
-        body: "Mi proyecto actual. El caso de estudio completo y el detalle técnico se añadirá pronto."
+        body:
+          "Una plataforma de IA para descubrimiento inteligente de restaurantes y predicción de demanda. Usa embeddings semánticos para recomendaciones personalizadas y modelos XGBoost entrenados con más de 30 variables para estimar la demanda diaria de servicio. Construida con Python, Azure ML Studio e infraestructura cloud.",
+        imageUrl: laCucharaPhoto,
+        imageAlt: "Foto del proyecto La Cuchara",
+        repoUrl: "https://github.com/adnanhamidoun/lacuchara",
+        detailsUrl: "https://la-cuchara.vercel.app/",
+        solutionUrl: ""
       },
       {
         tag: "Pronto",
@@ -324,37 +348,44 @@ function App() {
 
       <main id="top" className="container">
         <section className="hero panel reveal-section visible">
-          <p className="eyebrow">{t.heroEyebrow}</p>
-          <h1>{t.heroTitle}</h1>
-          <p className="subtitle">{t.heroSubtitle}</p>
+          <div className="hero-layout">
+            <div className="hero-photo-wrap">
+              <img className="hero-photo" src={lucianProfilePhoto} alt={t.heroImageAlt} loading="eager" />
+            </div>
+            <div className="hero-copy">
+              <p className="eyebrow">{t.heroEyebrow}</p>
+              <h1>{t.heroTitle}</h1>
+              <p className="subtitle">{t.heroSubtitle}</p>
 
-          <div className="hero-actions">
-            <a className="btn primary" href="#projects">
-              {t.heroPrimary}
-            </a>
-            <div className="social-actions">
-              <a
-                className="btn ghost social-btn"
-                href="https://www.linkedin.com/in/lucian-ciusa-66a7b92b6/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M8.34 10.87H5.67V18H8.34V10.87M8.34 6A1.56 1.56 0 1 0 5.22 6A1.56 1.56 0 0 0 8.34 6M18.34 13.78C18.34 11.27 16.93 10.55 15.65 10.55C14.63 10.55 14.19 11.11 13.93 11.5V10.87H11.37V18H14.05V14.3C14.05 13.32 14.24 12.37 15.45 12.37C16.64 12.37 16.66 13.48 16.66 14.36V18H19.34V13.78H18.34Z" />
-                </svg>
-                <span>{t.linkedinLabel}</span>
-              </a>
-              <a
-                className="btn ghost social-btn"
-                href="https://github.com/Luchy118"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                  <path d="M12 .5A12 12 0 0 0 8.2 23.9C8.8 24 9 23.7 9 23.5V21.3C5.7 22 5 19.9 5 19.9C4.5 18.7 3.8 18.4 3.8 18.4C2.8 17.7 3.9 17.7 3.9 17.7C5 17.8 5.6 18.9 5.6 18.9C6.6 20.6 8.3 20.1 9 19.8C9.1 19.1 9.4 18.7 9.7 18.5C7 18.2 4.2 17.1 4.2 12.4C4.2 11.1 4.7 10 5.5 9.1C5.4 8.8 5 7.5 5.6 5.8C5.6 5.8 6.6 5.5 9 7.1C9.9 6.8 10.9 6.7 12 6.7C13.1 6.7 14.1 6.8 15 7.1C17.4 5.5 18.4 5.8 18.4 5.8C19 7.5 18.6 8.8 18.5 9.1C19.3 10 19.8 11.1 19.8 12.4C19.8 17.1 17 18.2 14.3 18.5C14.7 18.8 15 19.4 15 20.3V23.5C15 23.7 15.2 24 15.8 23.9A12 12 0 0 0 12 .5Z" />
-                </svg>
-                <span>{t.githubLabel}</span>
-              </a>
+              <div className="hero-actions">
+                <a className="btn primary" href="#projects">
+                  {t.heroPrimary}
+                </a>
+                <div className="social-actions">
+                  <a
+                    className="btn ghost social-btn"
+                    href="https://www.linkedin.com/in/lucian-ciusa-66a7b92b6/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M8.34 10.87H5.67V18H8.34V10.87M8.34 6A1.56 1.56 0 1 0 5.22 6A1.56 1.56 0 0 0 8.34 6M18.34 13.78C18.34 11.27 16.93 10.55 15.65 10.55C14.63 10.55 14.19 11.11 13.93 11.5V10.87H11.37V18H14.05V14.3C14.05 13.32 14.24 12.37 15.45 12.37C16.64 12.37 16.66 13.48 16.66 14.36V18H19.34V13.78H18.34Z" />
+                    </svg>
+                    <span>{t.linkedinLabel}</span>
+                  </a>
+                  <a
+                    className="btn ghost social-btn"
+                    href="https://github.com/Luchy118"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="M12 .5A12 12 0 0 0 8.2 23.9C8.8 24 9 23.7 9 23.5V21.3C5.7 22 5 19.9 5 19.9C4.5 18.7 3.8 18.4 3.8 18.4C2.8 17.7 3.9 17.7 3.9 17.7C5 17.8 5.6 18.9 5.6 18.9C6.6 20.6 8.3 20.1 9 19.8C9.1 19.1 9.4 18.7 9.7 18.5C7 18.2 4.2 17.1 4.2 12.4C4.2 11.1 4.7 10 5.5 9.1C5.4 8.8 5 7.5 5.6 5.8C5.6 5.8 6.6 5.5 9 7.1C9.9 6.8 10.9 6.7 12 6.7C13.1 6.7 14.1 6.8 15 7.1C17.4 5.5 18.4 5.8 18.4 5.8C19 7.5 18.6 8.8 18.5 9.1C19.3 10 19.8 11.1 19.8 12.4C19.8 17.1 17 18.2 14.3 18.5C14.7 18.8 15 19.4 15 20.3V23.5C15 23.7 15.2 24 15.8 23.9A12 12 0 0 0 12 .5Z" />
+                    </svg>
+                    <span>{t.githubLabel}</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -368,12 +399,42 @@ function App() {
           <h2>{t.projectsTitle}</h2>
           <p className="section-intro">{t.projectsIntro}</p>
 
-          <div className="cards">
+          <div className="cards projects-grid">
             {t.projectCards.map((card, index) => (
-              <article className="card" key={`${card.title}-${index}`}>
-                {card.tag ? <p className="tag">{card.tag}</p> : null}
-                <h3>{card.title}</h3>
-                <p>{card.body}</p>
+              <article
+                className={`card project-card ${card.imageUrl ? "has-media" : "no-media"}`}
+                key={`${card.title}-${index}`}
+              >
+                {card.imageUrl ? (
+                  <div className="project-media" aria-hidden="true">
+                    <img src={card.imageUrl} alt={card.imageAlt || card.title} loading="lazy" />
+                  </div>
+                ) : null}
+                <div className="project-content">
+                  {card.tag ? <p className="tag">{card.tag}</p> : null}
+                  <h3>{card.title}</h3>
+                  <p>{card.body}</p>
+                  {(card.repoUrl || card.detailsUrl || card.solutionUrl) && (
+                    <div className="project-actions">
+                      {card.repoUrl ? (
+                        <a className="btn ghost project-btn" href={card.repoUrl} target="_blank" rel="noreferrer">
+                          {t.projectRepo}
+                        </a>
+                      ) : null}
+                      {card.detailsUrl ? (
+                        <a className="btn ghost project-btn" href={card.detailsUrl} target="_blank" rel="noreferrer">
+                          {t.projectDetails}
+                        </a>
+                      ) : null}
+                      {card.solutionUrl ? (
+                        <a className="btn ghost project-btn" href={card.solutionUrl} target="_blank" rel="noreferrer">
+                          {t.projectSolution}
+                        </a>
+                      ) : null}
+                    </div>
+                  )}
+                  {!card.solutionUrl && card.imageUrl ? <p className="project-note">{t.projectDemoUnavailable}</p> : null}
+                </div>
               </article>
             ))}
           </div>
