@@ -6,6 +6,7 @@ const content = {
   en: {
     nav: [
       { id: "about", label: "About" },
+      { id: "education", label: "Education" },
       { id: "projects", label: "Projects" },
       { id: "skills", label: "Skills" },
       { id: "certifications", label: "Certifications" },
@@ -16,45 +17,52 @@ const content = {
     heroSubtitle: "Building practical AI products and data-driven solutions.",
     heroImageAlt: "Portrait of Lucian Ciusa",
     heroPrimary: "See my work",
+    emailLabel: "Email",
     linkedinLabel: "LinkedIn",
     githubLabel: "GitHub",
     aboutTitle: "About Me",
     aboutBody:
       "I am currently studying an AI & Big Data specialization master's degree at Tajamar Tech in Madrid, Spain. I enjoy combining machine learning, analytics, and clean product thinking to solve real-world problems.",
+    educationTitle: "Education",
+    educationItems: [
+      {
+        institution: "Tajamar Tech",
+        program: "Master's in Big Data and AI, in collaboration with Microsoft",
+        dates: "Sep. 2025 - Jun. 2026",
+        location: "Madrid, Spain"
+      },
+      {
+        institution: "Escuela Profesional Santa Maria de los Apostoles",
+        program: "Higher Vocational Training in Multiplatform App Development",
+        dates: "Sep. 2022 - Jan. 2025",
+        location: "Madrid, Spain"
+      }
+    ],
     projectsTitle: "Projects",
-    projectsIntro: "Real project spotlight plus upcoming ones.",
+    projectsIntro: "Real project spotlight.",
     projectRepo: "Repository",
     projectDetails: "Details Page",
     projectSolution: "Solution Deployment",
-    projectDemoUnavailable: "Demo not available",
+    projectDemoUnavailable: "Demo not available, check out the details page instead.",
     projectCards: [
       {
         tag: "Featured",
-        title: "La Cuchara",
+        title: "CuisineAML",
         body:
           "An AI platform for intelligent restaurant discovery and demand forecasting. Uses semantic embeddings for personalized venue recommendations and XGBoost models trained on 30+ features to predict daily service demand. Built with Python, Azure ML Studio, and cloud infrastructure.",
         imageUrl: laCucharaPhoto,
-        imageAlt: "La Cuchara project photo",
+        imageAlt: "CuisineAML project photo",
         repoUrl: "https://github.com/adnanhamidoun/lacuchara",
-        detailsUrl: "https://la-cuchara.vercel.app/",
+        detailsUrl: "https://cuisineaml-preview.vercel.app/",
         solutionUrl: ""
-      },
-      {
-        tag: "Soon",
-        title: "In Progress",
-        body: "Space ready for future portfolio work and measurable outcomes."
-      },
-      {
-        tag: "Soon",
-        title: "In Progress",
-        body: "Space ready for future portfolio work and measurable outcomes."
       }
     ],
     skillsTitle: "Skills & Tech Stack",
     certTitle: "Certifications",
     certIntro: "Microsoft certifications certified and in progress.",
     contactTitle: "Contact",
-    contactBody: "Use this form to quickly draft an email.",
+    contactBody: "Use this form to quickly draft an email, or",
+    contactInlineCta: "click here",
     formName: "Name",
     formEmail: "Email",
     formMessage: "Message",
@@ -63,6 +71,7 @@ const content = {
   es: {
     nav: [
       { id: "about", label: "Sobre mí" },
+      { id: "education", label: "Educación" },
       { id: "projects", label: "Proyectos" },
       { id: "skills", label: "Habilidades" },
       { id: "certifications", label: "Certificaciones" },
@@ -73,45 +82,52 @@ const content = {
     heroSubtitle: "Construyendo productos de IA y soluciones basadas en datos.",
     heroImageAlt: "Retrato de Lucian Ciusa",
     heroPrimary: "Ver proyectos",
+    emailLabel: "Email",
     linkedinLabel: "LinkedIn",
     githubLabel: "GitHub",
     aboutTitle: "Sobre Mí",
     aboutBody:
       "Actualmente estudio un máster de especialización en IA y Big Data en Tajamar Tech, Madrid. Me gusta combinar machine learning, analítica y mentalidad de producto para resolver problemas reales.",
+    educationTitle: "Educación",
+    educationItems: [
+      {
+        institution: "Tajamar Tech",
+        program: "Máster en Big Data e IA, en colaboración con Microsoft",
+        dates: "sept. 2025 - jun. 2026",
+        location: "Madrid, España"
+      },
+      {
+        institution: "Escuela Profesional Santa Maria de los Apostoles",
+        program: "Ciclo Formativo de Grado Superior, Desarrollo de Aplicaciones Multiplataforma",
+        dates: "sept. 2022 - ene. 2025",
+        location: "Madrid, España"
+      }
+    ],
     projectsTitle: "Proyectos",
-    projectsIntro: "Proyecto real destacado y próximos casos de estudio.",
+    projectsIntro: "Proyecto real destacado.",
     projectRepo: "Repositorio",
     projectDetails: "Página de Detalles",
     projectSolution: "Despliegue de la Solución",
-    projectDemoUnavailable: "Demo no disponible",
+    projectDemoUnavailable: "Demo no disponible, consulta la página de detalles en su lugar.",
     projectCards: [
       {
         tag: "Destacado",
-        title: "La Cuchara",
+        title: "CuisineAML",
         body:
           "Una plataforma de IA para descubrimiento inteligente de restaurantes y predicción de demanda. Usa embeddings semánticos para recomendaciones personalizadas y modelos XGBoost entrenados con más de 30 variables para estimar la demanda diaria de servicio. Construida con Python, Azure ML Studio e infraestructura cloud.",
         imageUrl: laCucharaPhoto,
-        imageAlt: "Foto del proyecto La Cuchara",
+        imageAlt: "Foto del proyecto CuisineAML",
         repoUrl: "https://github.com/adnanhamidoun/lacuchara",
-        detailsUrl: "https://la-cuchara.vercel.app/",
+        detailsUrl: "https://cuisineaml-preview.vercel.app/",
         solutionUrl: ""
-      },
-      {
-        tag: "Pronto",
-        title: "En Progreso",
-        body: "Espacio preparado para futuros proyectos con resultados medibles."
-      },
-      {
-        tag: "Pronto",
-        title: "En Progreso",
-        body: "Espacio preparado para futuros proyectos con resultados medibles."
       }
     ],
     skillsTitle: "Habilidades y Stack Tecnológico",
     certTitle: "Certificaciones",
     certIntro: "Certificaciones de Microsoft obtenidas y en progreso.",
     contactTitle: "Contacto",
-    contactBody: "Usa este formulario para redactar un email rápidamente.",
+    contactBody: "Usa este formulario para redactar un email rápidamente, o",
+    contactInlineCta: "haz clic aquí",
     formName: "Nombre",
     formEmail: "Email",
     formMessage: "Mensaje",
@@ -220,30 +236,92 @@ const certifications = [
   }
 ];
 
-const skills = [
-  "Python",
-  "SQL",
-  "Azure",
-  "Azure Machine Learning",
-  "Azure AI Services",
-  "Azure OpenAI",
-  "Microsoft Fabric",
-  "Azure SQL",
-  "Databricks",
-  "PySpark",
-  "Machine Learning",
-  "MLOps",
-  "Data Analysis",
-  "Power BI",
-  "Deep Learning",
-  "NLP",
-  "Computer Vision",
-  "Prompt Engineering",
-  "Data Pipelines",
-  "ETL",
-  "Git",
-  "APIs"
-];
+const skillGroups = {
+  en: [
+    {
+      title: "AI & Data",
+      items: [
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "Computer Vision",
+        "Prompt Engineering",
+        "MLOps",
+        "Data Analysis"
+      ]
+    },
+    {
+      title: "Cloud & Platforms",
+      items: [
+        "Azure",
+        "Azure Machine Learning",
+        "Azure AI Services",
+        "Azure OpenAI",
+        "Microsoft Fabric",
+        "Databricks"
+      ]
+    },
+    {
+      title: "Data Engineering",
+      items: ["SQL", "Azure SQL", "PySpark", "Data Pipelines", "ETL", "Power BI"]
+    },
+    {
+      title: "Software & ERP",
+      items: [
+        ".NET Framework",
+        "C#",
+        "APIs",
+        "Git",
+        "ERP Systems",
+        "ERP Integrations",
+        "Business Process Automation"
+      ]
+    }
+  ],
+  es: [
+    {
+      title: "IA y Datos",
+      items: [
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "NLP",
+        "Computer Vision",
+        "Prompt Engineering",
+        "MLOps",
+        "Análisis de Datos"
+      ]
+    },
+    {
+      title: "Cloud y Plataformas",
+      items: [
+        "Azure",
+        "Azure Machine Learning",
+        "Azure AI Services",
+        "Azure OpenAI",
+        "Microsoft Fabric",
+        "Databricks"
+      ]
+    },
+    {
+      title: "Ingeniería de Datos",
+      items: ["SQL", "Azure SQL", "PySpark", "Pipelines de Datos", "ETL", "Power BI"]
+    },
+    {
+      title: "Software y ERP",
+      items: [
+        ".NET Framework",
+        "C#",
+        "APIs",
+        "Git",
+        "Sistemas ERP",
+        "Integraciones ERP",
+        "Automatización de Procesos"
+      ]
+    }
+  ]
+};
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -275,19 +353,19 @@ function App() {
           const isVisible = entry.target.classList.contains("visible");
           const ratio = entry.intersectionRatio;
 
-          if (!isVisible && ratio >= 0.24) {
+          if (!isVisible && ratio >= 0.2) {
             entry.target.classList.add("visible");
             return;
           }
 
-          if (isVisible && ratio <= 0.08) {
+          if (isVisible && ratio <= 0.06) {
             entry.target.classList.remove("visible");
           }
         });
       },
       {
         rootMargin: "0px 0px -8% 0px",
-        threshold: [0, 0.08, 0.16, 0.24, 0.32]
+        threshold: [0, 0.06, 0.12, 0.2, 0.28]
       }
     );
 
@@ -314,12 +392,6 @@ function App() {
 
   return (
     <>
-      <div className="background-canvas" aria-hidden="true">
-        <div className="aurora aurora-one" />
-        <div className="aurora aurora-two" />
-        <div className="mesh-overlay" />
-      </div>
-
       <header className="site-header">
         <a className="logo" href="#top">
           LC
@@ -395,6 +467,20 @@ function App() {
           <p>{t.aboutBody}</p>
         </section>
 
+        <section id="education" className="panel reveal-section">
+          <h2>{t.educationTitle}</h2>
+          <div className="education-grid">
+            {t.educationItems.map((item) => (
+              <article className="education-card" key={`${item.institution}-${item.program}`}>
+                <h3>{item.institution}</h3>
+                <p>{item.program}</p>
+                <p className="education-meta">{item.dates}</p>
+                <p className="education-meta">{item.location}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section id="projects" className="panel reveal-section">
           <h2>{t.projectsTitle}</h2>
           <p className="section-intro">{t.projectsIntro}</p>
@@ -442,9 +528,16 @@ function App() {
 
         <section id="skills" className="panel reveal-section">
           <h2>{t.skillsTitle}</h2>
-          <div className="chips">
-            {skills.map((skill) => (
-              <span key={skill}>{skill}</span>
+          <div className="skill-groups">
+            {skillGroups[lang].map((group) => (
+              <article className="skill-group" key={group.title}>
+                <h3 className="skill-group-title">{group.title}</h3>
+                <div className="chips">
+                  {group.items.map((skill) => (
+                    <span key={`${group.title}-${skill}`}>{skill}</span>
+                  ))}
+                </div>
+              </article>
             ))}
           </div>
         </section>
@@ -486,7 +579,9 @@ function App() {
 
         <section id="contact" className="panel reveal-section">
           <h2>{t.contactTitle}</h2>
-          <p>{t.contactBody}</p>
+          <p>
+            {t.contactBody} <a className="contact-inline-link" href="mailto:lucianciusa1@gmail.com">{t.contactInlineCta}</a>.
+          </p>
           <form className="contact-form" onSubmit={handleSubmit}>
             <label>
               <span>{t.formName}</span>
